@@ -21,11 +21,12 @@ export default function App() {
 
   return (
     <div style={{
-      minHeight: "100vh", background: "#1a1a2e",
-      display: "flex", alignItems: "center", justifyContent: "center",
-      padding: 16,
-      backgroundImage: "radial-gradient(circle at 20% 80%, #0d2137 0%, transparent 50%), radial-gradient(circle at 80% 20%, #0d3320 0%, transparent 50%)"
-    }}>
+       minHeight: "100vh",
+     width: "100%",
+     background: "#111b21",
+     display: "flex",
+     flexDirection: "column"
+     }}>
       <style>{`
         @keyframes bounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-6px)} }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -35,26 +36,15 @@ export default function App() {
       `}</style>
 
       <div style={{
-        width: 412, height: 892, background: "#111b21",
-        borderRadius: 40, border: "12px solid #2e2e2e",
-        boxShadow: "0 24px 64px rgba(0,0,0,0.8)",
-        display: "flex", flexDirection: "column", overflow: "hidden",
-        position: "relative"
+       width: "100%",
+     height: "100vh",
+     background: "#111b21",
+     display: "flex",
+     flexDirection: "column",
+     overflow: "hidden"
       }}>
         
-        {/* Hardware / Platform Status bar simulation */}
-        <div style={{
-          background: "#075E54", height: 48, display: "flex",
-          alignItems: "flex-end", justifyContent: "space-between",
-          padding: "0 24px 8px", flexShrink: 0
-        }}>
-          <span style={{ color: "white", fontSize: 13, fontWeight: 600 }}>9:41</span>
-          <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-            <svg width="16" height="12" viewBox="0 0 16 12"><rect x="0" y="8" width="3" height="4" fill="white" rx="0.5"/><rect x="4.5" y="5" width="3" height="7" fill="white" rx="0.5"/><rect x="9" y="2" width="3" height="10" fill="white" rx="0.5"/><rect x="13.5" y="0" width="3" height="12" fill="white" rx="0.5"/></svg>
-            <svg width="16" height="12" viewBox="0 0 24 18"><path d="M1 6C4.6 2.4 9 0.5 12 0.5s7.4 1.9 11 5.5" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round"/><path d="M4.5 9.5C6.8 7.3 9.3 6 12 6s5.2 1.3 7.5 3.5" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round"/><path d="M8.5 13C9.6 11.9 10.8 11 12 11s2.4.9 3.5 2" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round"/><circle cx="12" cy="17" r="1.5" fill="white"/></svg>
-            <svg width="22" height="12" viewBox="0 0 22 12"><rect x="0.5" y="0.5" width="18" height="11" rx="3" stroke="white" strokeWidth="1"/><rect x="2" y="2" width="13" height="8" rx="1.5" fill="white"/><path d="M19.5 4v4" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
-          </div>
-        </div>
+       
 
         {/* Content Shell */}
         <div style={{ flex: 1, display: "flex", flexDirection: "column", overflow: "hidden", position: "relative" }}>
@@ -128,10 +118,7 @@ export default function App() {
           </div>
         )}
 
-        {/* Virtual Hardware Home Button Bar */}
-        <div style={{ background: "#0a0a0a", padding: "8px 0 12px", display: "flex", justifyContent: "center" }}>
-          <div style={{ width: 120, height: 5, background: "#333", borderRadius: 3 }}/>
-        </div>
+       
 
       </div>
     </div>
