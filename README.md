@@ -78,29 +78,32 @@ Built using:
 # 📂 Project Structure
 
 ```
-src
-│
-├── App.jsx
-│
-├── components
-│   │
-│   ├── common
-│   │   ├── Avatar.jsx
-│   │   ├── Icon.jsx
-│   │   └── Ticks.jsx
-│   │
-│   └── screens
-│       ├── ChatsScreen.jsx
-│       ├── ChatScreen.jsx
-│       ├── CallsScreen.jsx
-│       ├── StatusScreen.jsx
-│       └── SettingsScreen.jsx
-│
-├── data
-│   └── mockData.js
-│
-└── hooks
-    └── useChat.js
+react-vite-app/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Avatar.jsx
+│   │   │   ├── Icon.jsx
+│   │   │   └── Ticks.jsx
+│   │   └── screens/
+│   │       ├── ChatsScreen.jsx
+│   │       ├── ChatScreen.jsx
+│   │       ├── CallsScreen.jsx
+│   │       ├── StatusScreen.jsx
+│   │       └── SettingsScreen.jsx
+│   ├── data/
+│   │   └── mockData.js
+│   ├── hooks/
+│   │   └── useChat.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
 ---
