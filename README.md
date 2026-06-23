@@ -1,4 +1,4 @@
-# WhatsApp UI Clone 🚀
+# WhatsApp UI Clone - Mobile Version 🚀
 
 A modern **WhatsApp-inspired UI clone** built with React.js.
 
